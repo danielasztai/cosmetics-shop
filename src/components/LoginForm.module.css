@@ -1,0 +1,37 @@
+.container {
+  height: 92vh;
+  background-color: #9dd2f4;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 75vh;
+}
+
+.form {
+  background-color: #ffc9cf;
+  padding: 50px 100px;
+  border-radius: 50px;
+}
+
+.line input {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  font-family: 'Lumanosimo', cursive;
+  font-size: 2rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Lumanosimo', cursive;
+  font-size: 1.5rem;
+}
