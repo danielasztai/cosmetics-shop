@@ -32,3 +32,23 @@
 .nav a:hover {
   color: #24a2f0;
 }
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}

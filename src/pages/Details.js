@@ -1,13 +1,13 @@
 import { useLoaderData } from 'react-router-dom';
-import ProductsList from '../components/ProductsList';
+import ProductDetails from '../components/ProductDetails';
 
-const ProductsPage = () => {
+const DetailsPage = () => {
   const products = useLoaderData();
 
-  return <ProductsList products={products} />;
+  return <ProductDetails products={products} />;
 };
 
-export default ProductsPage;
+export default DetailsPage;
 
 export const loader = async () => {
   const response = await fetch(

@@ -1,10 +1,37 @@
 .box {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin: 20px 50px;
+  margin: 50px;
+  text-align: center;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
+}
+
+.box p {
+  margin: 5px 0;
+}
+
+.box button {
+  border: none;
+  background-color: #24a2f0;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box button:hover {
+  color: black;
+  background-color: #ffc9cf;
 }
 
 .box img {
   width: 200px;
   height: 300px;
+  border-radius: 10px;
 }

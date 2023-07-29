@@ -1,0 +1,18 @@
+.error-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 92vh;
+  background-color: black;
+  color: white;
+  row-gap: 20px;
+  padding-top: 100px;
+}
+
+.error-container h1 {
+  font-size: 2.4rem;
+}
+
+.error-container p {
+  font-size: 1.4rem;
+}
