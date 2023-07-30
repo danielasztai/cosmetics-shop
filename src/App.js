@@ -8,8 +8,11 @@ import ProductsPage from './pages/Products';
 import ErrorPage from './pages/Error';
 import DetailsPage from './pages/Details';
 
-import { loader as ProductsLoader } from './pages/Products';
-import { loader as ProductDetailsLoader } from './pages/Details';
+import { loader as productsLoader } from './pages/Products';
+import { loader as productDetailsLoader } from './pages/Details';
+import { loader as loginUserLoader } from './pages/Login';
+import { action as registerUserAction } from './pages/Signup';
+import ContactPage from './pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -19,14 +22,15 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
 
-      { path: 'login', element: <LoginPage /> },
-      { path: 'signup', element: <SignupPage /> },
-      { path: 'products', element: <ProductsPage />, loader: ProductsLoader },
+      { path: 'login', element: <LoginPage />, loader: loginUserLoader },
+      { path: 'signup', element: <SignupPage />, action: registerUserAction },
+      { path: 'products', element: <ProductsPage />, loader: productsLoader },
       {
         path: 'products/:productId',
         element: <DetailsPage />,
-        loader: ProductDetailsLoader,
+        loader: productDetailsLoader,
       },
+      { path: 'contact', element: <ContactPage /> },
     ],
   },
 ]);

@@ -17,13 +17,13 @@ const MainNavigation = () => {
         </Link>
         <ul className={classes.nav}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Főoldal</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/products">Termékek</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Kapcsolat</Link>
           </li>
           <li className={classes['cart-icon']}>
             <div className={classes['cart-icon-dot']}>3</div>

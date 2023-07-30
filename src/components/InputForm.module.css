@@ -18,10 +18,13 @@
   border-radius: 50px;
 }
 
-.line input {
+.line input,
+textarea {
   height: 25px;
   width: 100%;
   margin-bottom: 20px;
+  font-size: 1rem;
+  padding-left: 2px;
 }
 
 .container h2 {
@@ -34,4 +37,19 @@
   margin-bottom: 30px;
   font-family: 'Lumanosimo', cursive;
   font-size: 1.5rem;
+}
+
+.line .message {
+  height: 180px;
+}
+
+.confirm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.switch {
+  margin-left: 5px;
 }

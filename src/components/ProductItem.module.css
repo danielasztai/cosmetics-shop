@@ -6,12 +6,19 @@
   text-align: center;
 }
 
+.box h3 {
+  font-size: 1.6rem;
+}
+
 .box a {
   text-decoration: none;
   color: black;
 }
 
 .box p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: orangered;
   margin: 5px 0;
 }
 

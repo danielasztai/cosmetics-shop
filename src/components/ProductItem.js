@@ -1,6 +1,7 @@
 import classes from './ProductItem.module.css';
 
 import { Link } from 'react-router-dom';
+import Button from './UI/Button';
 
 const ProductItem = props => {
   const products = (Object.entries = props.products);
@@ -12,7 +13,7 @@ const ProductItem = props => {
         <h3>{item.title}</h3>
         <p>{item.price}$</p>
       </Link>
-      <button type="button">Add to cart</button>
+      <Button type="button" title="Kosárba" />
     </li>
   ));
 };
