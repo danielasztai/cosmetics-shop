@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
-import ErrorElement from '../components/ErrorElement';
-import MainNavigation from '../components/MainNavigation';
+import ErrorElement from '../components/Error/ErrorElement';
+import MainNavigation from '../components/Nav/MainNavigation';
 
 const ErrorPage = () => {
   return (

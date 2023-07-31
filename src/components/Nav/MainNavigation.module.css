@@ -4,7 +4,7 @@
   align-items: center;
   width: 100vw;
   height: 8vh;
-  background-color: #ffc9cf;
+  background-color: var(--main-form-color);
 }
 
 .brand {
@@ -30,7 +30,7 @@
 }
 
 .nav a:hover {
-  color: #24a2f0;
+  color: var(--main-btn-color);
 }
 
 .cart-icon {

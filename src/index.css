@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
 
+:root {
+  --main-bg-color: #9dd2f4;
+  --main-form-color: #ffc9cf;
+  --main-btn-color: #24a2f0;
+}
+
 * {
   margin: 0;
   padding: 0;

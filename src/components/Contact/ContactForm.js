@@ -1,8 +1,8 @@
 import { Form } from 'react-router-dom';
 
-import Button from './UI/Button';
+import Button from '../UI/Button';
 
-import classes from './InputForm.module.css';
+import classes from '../Auth/InputForm.module.css';
 
 const ContactForm = () => {
   return (

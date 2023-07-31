@@ -1,4 +1,8 @@
+import { useContext } from 'react';
+
 import { Link } from 'react-router-dom';
+
+import { CartContext } from '../../store/cart-context';
 
 import classes from './MainNavigation.module.css';
 
@@ -9,6 +13,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const MainNavigation = () => {
+  const cart = useContext(CartContext);
+  const productQuantity = cart.getAllProductQuantity();
+
   return (
     <header>
       <nav className={classes.container}>
@@ -26,7 +33,7 @@ const MainNavigation = () => {
             <Link to="/contact">Kapcsolat</Link>
           </li>
           <li className={classes['cart-icon']}>
-            <div className={classes['cart-icon-dot']}>3</div>
+            <div className={classes['cart-icon-dot']}>{productQuantity}</div>
             <Link to="/cart">
               <FontAwesomeIcon icon={faCartShopping} />
             </Link>

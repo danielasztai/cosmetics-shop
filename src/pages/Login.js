@@ -1,5 +1,5 @@
 import { json, useLoaderData } from 'react-router-dom';
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/Auth/LoginForm';
 
 const LoginPage = () => {
   const users = useLoaderData();

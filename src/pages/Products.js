@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom';
-import ProductsList from '../components/ProductsList';
+import ProductsList from '../components/Products/ProductsList';
 
 const ProductsPage = () => {
   const products = useLoaderData();

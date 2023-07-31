@@ -1,0 +1,11 @@
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid white;
+  margin: 5px;
+}
+
+.product-container img {
+  height: 125px;
+}

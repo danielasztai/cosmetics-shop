@@ -1,6 +1,6 @@
 .container {
   height: 92vh;
-  background-color: #9dd2f4;
+  background-color: var(--main-bg-color);
 }
 
 .form-container {
@@ -13,7 +13,7 @@
 }
 
 .form {
-  background-color: #ffc9cf;
+  background-color: var(--main-form-color);
   padding: 50px 100px;
   border-radius: 50px;
 }

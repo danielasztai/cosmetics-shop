@@ -53,10 +53,10 @@
   border-radius: 50px;
   padding: 10px;
   color: white;
-  background-color: #24a2f0;
+  background-color: var(--main-btn-color);
 }
 
 .container a:hover {
   color: black;
-  background-color: #ffc9cf;
+  background-color: var(--main-form-color);
 }

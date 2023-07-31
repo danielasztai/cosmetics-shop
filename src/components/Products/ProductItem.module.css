@@ -24,7 +24,7 @@
 
 .box button {
   border: none;
-  background-color: #24a2f0;
+  background-color: var(--main-btn-color);
   color: white;
   font-weight: bold;
   padding: 5px;
@@ -34,7 +34,7 @@
 
 .box button:hover {
   color: black;
-  background-color: #ffc9cf;
+  background-color: var(--main-form-color);
 }
 
 .box img {
