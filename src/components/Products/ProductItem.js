@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 
 import Button from '../UI/Button';
@@ -11,8 +11,6 @@ const ProductItem = props => {
 
   const products = (Object.entries = props.products);
 
-  console.log(cart.items);
-
   return products.map(item => (
     <li key={item.id} className={classes.box}>
       <Link to={`${item.id}`}>
@@ -23,7 +21,7 @@ const ProductItem = props => {
       <Button
         type="button"
         title="Kosárba"
-        onClick={() => cart.addOneToCart(item.id)}
+        onClick={() => cart.addOneToCart(item)}
       />
     </li>
   ));

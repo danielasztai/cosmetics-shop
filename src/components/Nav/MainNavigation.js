@@ -14,7 +14,10 @@ import {
 
 const MainNavigation = () => {
   const cart = useContext(CartContext);
-  const productQuantity = cart.getAllProductQuantity();
+  const productQuantity = cart.items.reduce(
+    (sum, product) => sum + product.quantity,
+    0
+  );
 
   return (
     <header>

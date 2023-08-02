@@ -15,6 +15,7 @@ import CartProvider from './store/cart-context';
 import { loader as productsLoader } from './pages/Products';
 import { loader as productDetailsLoader } from './pages/Details';
 import { loader as loginUserLoader } from './pages/Login';
+import { loader as cartLoader } from './pages/Cart';
 import { action as registerUserAction } from './pages/Signup';
 import { action as contactDataAction } from './pages/Contact';
 
@@ -28,14 +29,19 @@ const router = createBrowserRouter([
 
       { path: 'login', element: <LoginPage />, loader: loginUserLoader },
       { path: 'signup', element: <SignupPage />, action: registerUserAction },
-      { path: 'products', element: <ProductsPage />, loader: productsLoader },
+      {
+        path: 'products',
+        id: 'products',
+        element: <ProductsPage />,
+        loader: productsLoader,
+      },
       {
         path: 'products/:productId',
         element: <DetailsPage />,
         loader: productDetailsLoader,
       },
       { path: 'contact', element: <ContactPage />, action: contactDataAction },
-      { path: 'cart', element: <CartPage /> },
+      { path: 'cart', element: <CartPage />, loader: cartLoader },
     ],
   },
 ]);
