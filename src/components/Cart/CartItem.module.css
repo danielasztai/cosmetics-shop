@@ -2,12 +2,19 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 500px;
   border: 2px solid white;
   margin: 5px;
 }
 
 .product-container img {
   height: 125px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quantity {
@@ -54,4 +61,23 @@
   cursor: pointer;
   width: 100%;
   height: 100%;
+}
+
+.title {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title:visited {
+  color: black;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 560px) {
+  .product-container {
+    width: 300px;
+  }
 }

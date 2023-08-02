@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,16 @@ import {
 
 const MainNavigation = () => {
   const cart = useContext(CartContext);
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
+
+  const openHamburgerHandler = () => {
+    setIsHamburgerClicked(!isHamburgerClicked);
+  };
+
+  const otherPageHandler = () => {
+    setIsHamburgerClicked(false);
+  };
+
   const productQuantity = cart.items.reduce(
     (sum, product) => sum + product.quantity,
     0
@@ -47,7 +57,46 @@ const MainNavigation = () => {
             </Link>
           </li>
         </ul>
+        <div onClick={openHamburgerHandler} className={classes.hamburger}>
+          <div className={classes.line}></div>
+          <div className={classes.line}></div>
+          <div className={classes.line}></div>
+        </div>
       </nav>
+      {isHamburgerClicked && (
+        <nav className={classes['mobile-menu']}>
+          <ul className={classes['mobile-nav']}>
+            <li>
+              <Link onClick={otherPageHandler} to="/">
+                Főoldal
+              </Link>
+            </li>
+            <li>
+              <Link onClick={otherPageHandler} to="/products">
+                Termékek
+              </Link>
+            </li>
+            <li>
+              <Link onClick={otherPageHandler} to="/contact">
+                Kapcsolat
+              </Link>
+            </li>
+            <li className={classes['cart-icon']}>
+              <div className={classes['mobile-cart-icon-dot']}>
+                {productQuantity}
+              </div>
+              <Link onClick={otherPageHandler} to="/cart">
+                <FontAwesomeIcon icon={faCartShopping} />
+              </Link>
+            </li>
+            <li className={classes.login}>
+              <Link onClick={otherPageHandler} to="/login">
+                Login
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };

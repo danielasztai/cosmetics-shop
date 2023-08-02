@@ -10,6 +10,7 @@
   flex-direction: column;
   row-gap: 30px;
   height: 75vh;
+  padding-top: 150px;
 }
 
 .form {
@@ -40,7 +41,7 @@ textarea {
 }
 
 .line .message {
-  height: 180px;
+  height: 120px;
 }
 
 .confirm {
@@ -52,4 +53,28 @@ textarea {
 
 .switch {
   margin-left: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container h2 {
+    font-size: 1.4rem;
+  }
+
+  .form {
+    padding: 20px 40px;
+  }
+
+  .form-container {
+    padding-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container h2 {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
 }

@@ -30,10 +30,6 @@ const Signup = () => {
             <label htmlFor="password">Jelszó</label>
             <input type="password" name="password"></input>
           </div>
-          <div className={classes.line}>
-            <label htmlFor="password">Jelszó újra</label>
-            <input type="password" name="password"></input>
-          </div>
           <div className={classes.confirm}>
             <Button type="submit" title="Regisztrálok" />
             <p>

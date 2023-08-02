@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 import CartItem from './CartItem';
 
@@ -8,7 +8,6 @@ import classes from './CartContent.module.css';
 
 const CartContent = props => {
   const cart = useContext(CartContext);
-  const [isItemExisting, setIsItemExisting] = useState(false);
 
   const cartSum = cart.items
     ?.reduce((sum, item) => {
@@ -34,7 +33,7 @@ const CartContent = props => {
         </ul>
         <div className={classes['price-container']}>
           <h2>Fizetendő összesen</h2>
-          <h3>{cartSum}$</h3>
+          <h3 className={classes.price}>{cartSum}$</h3>
         </div>
       </div>
     </div>

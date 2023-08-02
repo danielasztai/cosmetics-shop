@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <div className={classes.container}>
       <div className={classes['form-container']}>
-        <h1>Kapcsolat</h1>
+        <h2>Kapcsolat</h2>
         <Form method="post" className={classes.form}>
           <h3 className={classes.title}>Vedd fel velünk a kapcsolatot!</h3>
           <div className={classes.line}>

@@ -4,7 +4,7 @@ import Button from '../UI/Button';
 
 import classes from './InputForm.module.css';
 
-const Login = props => {
+const Login = () => {
   return (
     <div className={classes.container}>
       <div className={classes['form-container']}>

@@ -19,6 +19,7 @@
 
 .nav {
   display: flex;
+  align-items: center;
   column-gap: 100px;
   list-style: none;
 }
@@ -51,4 +52,82 @@
   color: white;
   font-weight: bold;
   font-size: 0.7rem;
+}
+
+.mobile-cart-icon-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -3px;
+  right: 63px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+}
+
+.line {
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+.mobile-menu {
+  display: flex;
+  height: 100vh;
+  width: 60vw;
+  background-color: black;
+  z-index: 100;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 10px 0 0 10px;
+}
+
+.mobile-nav a {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .brand {
+    font-size: 1.3rem;
+  }
+
+  .nav {
+    column-gap: 50px;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    color: white;
+  }
 }
