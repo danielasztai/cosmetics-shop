@@ -3,7 +3,6 @@ import { createContext, useState } from 'react';
 export const CartContext = createContext({
   items: [],
   getProductQuantity: () => {},
-  getAllProductQuantity: () => {},
   addOneToCart: () => {},
   removeOneFromCart: () => {},
   deleteFromCart: () => {},
@@ -20,10 +19,6 @@ const CartProvider = ({ children }) => {
     }
 
     return quantity;
-  };
-
-  const getAllProductQuantity = () => {
-    return cartProducts.length;
   };
 
   const addOneToCart = item => {
@@ -74,10 +69,8 @@ const CartProvider = ({ children }) => {
   const contextValue = {
     items: cartProducts,
     getProductQuantity,
-    getAllProductQuantity,
     addOneToCart,
     removeOneFromCart,
-    deleteFromCart,
   };
 
   return (
