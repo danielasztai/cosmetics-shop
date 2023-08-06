@@ -24,3 +24,7 @@ yarn-error.log*
 
 # prettier
 .prettierrc
+
+#firebase
+.firebaserc
+firebase.json
