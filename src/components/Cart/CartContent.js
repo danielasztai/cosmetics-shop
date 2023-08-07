@@ -32,7 +32,7 @@ const CartContent = props => {
               />
             ))
           ) : (
-            <p>A kosár üres!</p>
+            <p>A kosár üres.</p>
           )}
         </ul>
         <div className={classes['price-container']}>
