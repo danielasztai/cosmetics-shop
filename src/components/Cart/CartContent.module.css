@@ -21,6 +21,13 @@
   margin-bottom: 20px;
 }
 
+.items-container p {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
 .price-container {
   display: flex;
   flex-direction: column;

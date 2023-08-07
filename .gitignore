@@ -26,5 +26,6 @@ yarn-error.log*
 .prettierrc
 
 #firebase
+.firebase
 .firebaserc
 firebase.json

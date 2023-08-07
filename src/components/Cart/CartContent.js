@@ -19,17 +19,21 @@ const CartContent = props => {
     <div className={classes.wrapper}>
       <div className={classes.container}>
         <ul className={classes['items-container']}>
-          {cart.items.map(item => (
-            <CartItem
-              key={item.id}
-              title={item.item.title}
-              img={item.item.img}
-              price={(item.item.price * item.quantity).toFixed(2)}
-              quantity={cart.getProductQuantity(item.id)}
-              id={item.id}
-              item={item}
-            />
-          ))}
+          {cart.items.length > 0 ? (
+            cart.items.map(item => (
+              <CartItem
+                key={item.id}
+                title={item.item.title}
+                img={item.item.img}
+                price={(item.item.price * item.quantity).toFixed(2)}
+                quantity={cart.getProductQuantity(item.id)}
+                id={item.id}
+                item={item}
+              />
+            ))
+          ) : (
+            <p>A kosár üres!</p>
+          )}
         </ul>
         <div className={classes['price-container']}>
           <h2>Fizetendő összesen</h2>
